@@ -71,8 +71,7 @@ public class Controlador {
 	@PutMapping(value="curso" , consumes= MediaType.APPLICATION_JSON_VALUE, 
 			produces= MediaType.APPLICATION_JSON_VALUE)
 	public List<Curso> actualizaCurso(@RequestBody Curso curso){
-		
-		// se realiza la modificación con un for estandar porque 
+	    // se realiza la modificación con un for estandar porque 
 		//hay que modificar la posición en donde encontremos un curso que se llame
 		//con el mismo nombre que viene en el cuerpo
 		for(int i = 0 ; i<cursos.size(); i++) {
